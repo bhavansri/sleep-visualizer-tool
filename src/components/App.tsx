@@ -24,6 +24,7 @@ function App() {
   const selectedUser = userData[index];
   
   return (
+    <div className="flex items-center justify-center">
     <div>
         <Listbox value={index} onChange={setIndex}>
           <div className="m-2 px-2 flex items-center">
@@ -77,6 +78,7 @@ function App() {
         }
       </Tab.Panels>
     </Tab.Group>
+    </div>
     </div>
   );
 }
